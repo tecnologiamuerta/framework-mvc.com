@@ -1,2 +1,15 @@
 RewriteEngine On
-RewriteRule index\.php http://google.com.mx
+
+RewriteBase /
+
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+RewriteRule ^(?:application|modules|system)\b.* index.php/$0 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+
+RewriteRule .* index.php/$0 [PT]
