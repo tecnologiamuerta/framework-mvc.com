@@ -1,6 +1,3 @@
-<?php
-    namespace framework\mvc;
-?>
 <!doctype html>
 <html>
     <head>
@@ -12,7 +9,7 @@
         <h2>La tecnologia nunca muere, evoluciona</h2>
         <div>
             <?php
-                $content = new MVC();
+                $content = new \Views\View();
                 $content->RenderContent(); 
             ?>
         </div>
