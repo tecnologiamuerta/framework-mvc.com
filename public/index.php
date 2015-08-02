@@ -1,0 +1,13 @@
+<?php
+use \System\Application;
+
+define('DS', DIRECTORY_SEPARATOR);
+define('ROOT', dirname(dirname(__FILE__)).DS);
+define("API", ROOT."API".DS);
+define("APPLICATION", ROOT."Application".DS);
+
+set_include_path(get_include_path().PATH_SEPARATOR.API.PATH_SEPARATOR.APPLICATION);
+spl_autoload_extensions(".php");
+spl_autoload_register();
+
+Application::Run();

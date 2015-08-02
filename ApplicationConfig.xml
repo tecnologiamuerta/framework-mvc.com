@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<application version="0">
+    <system>
+        <paths>
+            <path name="API" url="API" />
+            <path name="APPLICATION" url="Application" /> 
+        </paths>
+        <defaults>
+            <route controller="Home" action="Index" />
+            <layout name="SharedView" />
+        </defaults>
+    </system>
+</application>

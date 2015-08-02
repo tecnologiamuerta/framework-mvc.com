@@ -1,15 +1,9 @@
-RewriteEngine On
+#Addhandler application/x-httpd-php .html .php .myext
 
-RewriteBase /
-
-<Files .*>
-	Order Deny,Allow
-	Deny From All
-</Files>
-
-RewriteRule ^(?:application|modules|system)\b.* index.php/$0 [L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond ${REQUEST_FILENAME} !-d
-
-RewriteRule .* index.php/$0 [PT]
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule    ^$    public/    [L]
+    RewriteRule    (.*) public/$1    [L]
+ </IfModule>
+ 
+ Addhandler application/x-httpd-php .html .php .cphp .iphp
