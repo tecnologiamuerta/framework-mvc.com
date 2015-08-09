@@ -50,23 +50,31 @@ class Router{
         }
     }
     
-    public function Test(){
-        foreach($this->Routes as $data => $value){
-            if(is_array($value)){
-                echo $data." = ".implode(", ", $value)."<br />";
-            }else{
-                echo $data." = ".$value."<br />";
-            }
-        }
-    }
-    
     private function Dispatch(){
         $controller = $this->Routes["controller"];
         $data = "\\Controllers\\".$controller;
+        
+        $notFound = stream_resolve_include_path(str_replace("\\",DS,$data).".php") === false;
+        
+        if($notFound){
+            $this->Routes = array(
+                "controller" => "ErrorsController",
+                "action" => "Error404Action",
+                "parameters" => array("Error" => $controller)
+            );
+            $this->Routes["model"] = rtrim($this->Routes["controller"], "s");
+            $this->Dispatch();
+            return;
+        }
+        
         $dispatch = new $data($this->Routes["model"], $this->Routes["controller"], $this->Routes["action"]);
-        if((int)method_exists($data, $this->Routes["action"])){
+        if(!method_exists($data, $this->Routes["action"])){
+            $this->Routes["action"] = $dispatch->DefaultAction;
+        }
+        if(method_exists($data, $this->Routes["action"])){
             $ViewData = call_user_func_array(array($dispatch, $this->Routes["action"]), $this->Routes["parameters"]);
             $ViewData->ViewPath = "Views\\".str_replace("Controller", "", $controller)."\\".str_replace("Action", "", $this->Routes["action"]).".php";
+            $ViewData->Controller = str_replace("Controller", "", $controller);
             if($ViewData->Layout == null){
                 $MainLayout = APPLICATION."Views".DS.str_replace("Controller", "", $controller).DS.str_replace("Action", "", $this->Routes["action"]).".php";
             }else{
@@ -74,7 +82,8 @@ class Router{
             }
             require_once($MainLayout);
         }else{
-            throw new \Exception("El controlador ".$controller." con el action ".$this->Routes["action"]." no se encuentra definido");
+            echo "Not found";
+            //throw new \Exception("El controlador ".$controller." con el action ".$this->Routes["action"]." no se encuentra definido");
         }
     }
     

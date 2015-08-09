@@ -1,13 +1,40 @@
 <?xml version="1.0" standalone="no"?>
 <application version="0">
     <system>
+        <environment type="developer">
+        </environment>
         <paths>
-            <path name="API" url="API" />
-            <path name="APPLICATION" url="Application" /> 
+            <codepath>
+                <path name="API" url="API" />
+                <path name="APPLICATION" url="Application" />
+            </codepath> 
         </paths>
         <defaults>
             <route controller="Home" action="Index" />
             <layout name="SharedView" />
+            <connection alias="default" />
+            <log path="Logs" />
         </defaults>
+        <connections>
+            <connection encrypted="false" useConnectionString="false" alias="default">
+                <server value="192.168.100.100" />
+                <database value="tecnologiamuerta" />
+                <user value="root" />
+                <password value="02203915" />
+            </connection>
+        </connections>
     </system>
+    <libraries>
+        <library name="bootstrap-3.3.5" alias="bootstrap">
+            <style path="css" name="bootstrap.css" />
+            <script path="js" name="bootstrap.js" />
+        </library>
+        <library name="jquery-ui-1.11.4" alias="jquery-ui">
+            <style path="/" name="jquery-ui.css" />
+            <script path="/" name="jquery-ui.js" />
+        </library>
+        <library name="jquery-2.1.4" alias="jquery">
+            <style path="/" name="jquery-2.1.4.js" />
+        </library>
+    </libraries>
 </application>

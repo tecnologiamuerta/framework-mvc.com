@@ -1,5 +1,6 @@
 <?php
 use \System\Application;
+use \System\Data\Model;
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(dirname(__FILE__)).DS);
