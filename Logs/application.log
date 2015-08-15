@@ -1,0 +1,162 @@
+[09-Aug-2015 23:18:50 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 48
+[09-Aug-2015 23:18:50 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:48
+[09-Aug-2015 23:18:50 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 48
+[09-Aug-2015 23:18:50 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:48
+[09-Aug-2015 23:18:50 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 48
+[09-Aug-2015 23:18:50 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:18:50 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:48
+[09-Aug-2015 23:20:10 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 48
+[09-Aug-2015 23:20:10 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:48
+[09-Aug-2015 23:20:10 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 48
+[09-Aug-2015 23:20:10 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:48
+[09-Aug-2015 23:20:10 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 48
+[09-Aug-2015 23:20:10 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:48
+[09-Aug-2015 23:20:10 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 48
+[09-Aug-2015 23:20:10 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:10 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:48
+[09-Aug-2015 23:20:51 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:51 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:51 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:51 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:51 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:51 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:51 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:51 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:51 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:51 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:51 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:51 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:52 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:52 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:52 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:52 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:52 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:52 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:52 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:52 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:52 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:52 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:52 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:52 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:53 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:53 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:53 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:53 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:53 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:53 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:20:54 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:20:54 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:21:41 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:21:41 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:21:41 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:21:41 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:21:41 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:21:41 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:21:41 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:21:41 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:21:41 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:21:41 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:21:41 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:21:41 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:21:42 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:21:42 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:21:42 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:21:42 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:21:42 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:21:42 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:21:42 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:21:42 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:21:42 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:21:42 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:21:42 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:21:42 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:21:51 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:21:51 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:21:51 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:21:51 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:21:51 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:21:51 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:21:52 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:21:52 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:21:52 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:21:52 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[09-Aug-2015 23:21:52 Europe/Paris] PHP Warning:  SimpleXMLElement::addAttribute(): Attribute already exists in E:\proyectos\php\framework-mvc.com\API\System\Application.php on line 49
+[09-Aug-2015 23:21:52 Europe/Paris] PHP Stack trace:
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
+[09-Aug-2015 23:21:52 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49

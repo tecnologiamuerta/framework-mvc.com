@@ -7,4 +7,5 @@ interface IDBContext{
     public function GetError();
     public function GetNumRows();
     public function FreeResult();
+    public function IsConnected();
 }

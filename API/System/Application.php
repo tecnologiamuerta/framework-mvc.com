@@ -36,7 +36,6 @@ class Application{
                 "action" => self::$Configuration->defaults->route["action"],
                 "parameters" => array()
             ));
-            self::$Model = new \System\Data\Model();
             self::$IsDeveloper = self::$Configuration->environment["type"] === "developer";
             
             $this->SetReportingEnvironment();
@@ -81,27 +80,6 @@ class Application{
             ini_set("display", "Off");
             ini_set("log_errors", "On");
             ini_set("error_log", self::$LogPath);
-        }
-    }
-    
-    public function __get($name){
-        switch($name){
-            case "Root":
-                return $this->Root;
-            break;
-            case "Url":
-                return $this->Url;
-            break;
-            default:
-                return null;
-        }
-    }
-    
-    public function __set($name, $value){
-        switch($name){
-            case "Root":
-                $this->Root = $value;
-            break;
         }
     }
 }

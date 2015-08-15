@@ -1,40 +1,41 @@
 <?xml version="1.0" standalone="no"?>
-<application version="0">
+<application version="0" key="b40d1267e01ebf40cb5f89837e18e170688a6f3d">
     <system>
         <environment type="developer">
         </environment>
         <paths>
             <codepath>
-                <path name="API" url="API" />
-                <path name="APPLICATION" url="Application" />
+                <path name="API" url="API"/>
+                <path name="APPLICATION" url="Application"/>
             </codepath> 
         </paths>
         <defaults>
-            <route controller="Home" action="Index" />
-            <layout name="SharedView" />
-            <connection alias="default" />
-            <log path="Logs" />
+            <route controller="Home" action="Index"/>
+            <layout name="SharedView"/>
+            <connection alias="default"/>
+            <log path="Logs"/>
         </defaults>
         <connections>
-            <connection encrypted="false" useConnectionString="false" alias="default">
-                <server value="192.168.100.100" />
-                <database value="tecnologiamuerta" />
-                <user value="root" />
-                <password value="02203915" />
+            <connection encrypted="true" useConnectionString="false" alias="default" connectionString="">
+                <server value="A9Flyltf6THaIkiobQNRcyIyz82F1LjRHmseJ9rhs/4="/>
+                <database value="t88vrNKsC1dq82DnCbNUd/vUIrihNVlX/d+xubWJO5s="/>
+                <user value="38b8eIvV0W+RWJywdGeZwNvzEDG7Bye/VKi1bmhjBfA="/>
+                <password value="zfoKWOHxXQ1Jr8p/nkYtMMLIgck2Qkn50m3lCc0BtdI="/>
+                <port value="MpDuUFvdDI9TE6GkMVrfkU8eqf7LJkDmE894Q+9MSJU=" />
             </connection>
         </connections>
     </system>
     <libraries>
         <library name="bootstrap-3.3.5" alias="bootstrap">
-            <style path="css" name="bootstrap.css" />
-            <script path="js" name="bootstrap.js" />
+            <style path="css" name="bootstrap.css"/>
+            <script path="js" name="bootstrap.js"/>
         </library>
         <library name="jquery-ui-1.11.4" alias="jquery-ui">
-            <style path="/" name="jquery-ui.css" />
-            <script path="/" name="jquery-ui.js" />
+            <style path="/" name="jquery-ui.css"/>
+            <script path="/" name="jquery-ui.js"/>
         </library>
         <library name="jquery-2.1.4" alias="jquery">
-            <style path="/" name="jquery-2.1.4.js" />
+            <style path="/" name="jquery-2.1.4.js"/>
         </library>
     </libraries>
 </application>

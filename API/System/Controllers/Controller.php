@@ -9,16 +9,14 @@ class Controller implements IController{
     public $DefaultAction;
     
     public function __construct($model, $controller, $action){
+        $modelClass = "\\Models\\$model";
         $this->Action = $action;
         $this->Controller = $controller;
-        $this->Model = $model;
-        $this->DefaultAction = "IndexAction";
-    }
-    
-    public function SetVariable($name, $value){
-    }
-    
-    public function __destruct(){
         
+        $notFound = stream_resolve_include_path(str_replace("\\",DS,$modelClass).".php") === false;
+        if(!$notFound){
+            $this->Model = new $modelClass();
+        }
+        $this->DefaultAction = "IndexAction";
     }
 }

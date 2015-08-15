@@ -9,8 +9,10 @@ class ConfigurationManager{
     public $connections;
     public $environment;
     public $routes;
+    public $fileName;
     public function __construct(){
-        $this->xml = new \SimpleXMLElement(file_get_contents(ROOT."ApplicationConfig.xml"));
+        $this->fileName = ROOT."ApplicationConfig.xml";
+        $this->xml = new \SimpleXMLElement(file_get_contents($this->fileName));
         $this->defaults = $this->xml->system->defaults;
         $this->paths = $this->xml->system->paths;
         $this->libraries = $this->xml->libraries;
@@ -22,5 +24,30 @@ class ConfigurationManager{
     public function GetDefaultAction($controller){
         $route = $this->xml->system->routes["route[@controller=".$controller."]"];
         return $route;
+    }
+    
+    public function GetKey(){
+        $key = $this->xml["key"];
+        if($key == null || $key == ""){
+            $key = $this->GenerateKey($key);
+            $this->SetKey($key);
+            $this->Save();
+        }
+        return $key;
+    }
+    
+    public function SetKey($key){
+        $this->xml->addAttribute("key", $key);
+    }
+    
+    public function Save(){
+        $this->xml->asXML($this->fileName);
+    }
+    
+    private function GenerateKey(){
+        $date = date("d/m/Y H:i:s", time());
+        $requestTime = $_SERVER["REQUEST_TIME"];
+        $remoteAddr = $_SERVER["REMOTE_ADDR"];
+        return sha1($date.$requestTime.$remoteAddr.time());
     }
 }
