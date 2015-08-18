@@ -15,6 +15,32 @@ class String{
         return !($this->data !== null && $this->data !== self::EmptyString);
     }
     
+    public function EndWith($str){
+        if(substr($this->data, strlen($this->data) - strlen($str)) === $str){
+            return true;
+        }
+        return false;
+    }
+    
+    public function StartWith($str){
+        if(substr($this->data, 0, strlen($str)) === $str){
+            return true;
+        }
+        return false;
+    }
+    
+    public function RemoveEnd($str){
+        if($this->EndWith($str)){
+            return substr($this->data, 0, strlen($this->data) - strlen($str));
+        }else return $this->data;
+    }
+    
+    public function RemoveStart($str){
+        if($this->StartWith($str)){
+            return substr($this->data, strlen($str));
+        }else return $this->data;
+    }
+    
     public function __toString(){
         return $this->data;
     }

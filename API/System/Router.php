@@ -1,5 +1,8 @@
 <?php
 namespace System;
+
+use \System\DataTypes\String;
+
 class Router{
     private $Url;
     private $Routes;
@@ -53,10 +56,12 @@ class Router{
     private function Dispatch(){
         $controller = $this->Routes["controller"];
         $data = "\\Controllers\\".$controller;
-        
-        $notFound = stream_resolve_include_path(str_replace("\\",DS,$data).".php") === false;
-        
+        $className = str_replace("\\",DS,$data).".php";
+        $notFound = !$this->FileExists($className, "");
         if($notFound){
+            if($controller === "ErrorsController"){
+                return;
+            }
             $this->Routes = array(
                 "controller" => "ErrorsController",
                 "action" => "Error404Action",
@@ -102,5 +107,27 @@ class Router{
     
     public function GetRoute(){
         return $this->Routes;
+    }
+    
+    private function FileExists($path, $ext){
+        $rutas = explode(PATH_SEPARATOR, get_include_path());
+        foreach($rutas as $ruta){
+            $cadena = new String($ruta);
+            $cadena2 = new String($path);
+            if(!$cadena->EndWith(DS)){
+                if(!$cadena2->StartWith(DS)){
+                    $ruta = $ruta.DS;
+                }
+            }else{
+                if($cadena2->StartWith(DS)){
+                    $ruta = $cadena->RemoveEnd(DS);
+                }
+            }
+            $ruta = $ruta.$path.$ext;
+            if(file_exists($ruta)){
+                return true;
+            }
+        }
+        return false;
     }
 }
