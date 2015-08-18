@@ -16,12 +16,12 @@ spl_autoload_register(
     function($class){
         $class = str_replace("\\", DS, $class).".php";
 		$rutas = explode(PATH_SEPARATOR ,get_include_path());
+        echo $class."<br />";
 		foreach($rutas as $ruta){
-                        //echo $ruta.$class."<br />";
-			if(file_exists($ruta.$class)){
-				require_once($ruta.$class);
-				return;
-			}
+		   if(file_exists($ruta.$class)){
+    			require_once($ruta.$class);
+    			return;
+    	   }
 		}
         //spl_autoload($class);
     }
