@@ -30,7 +30,7 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-        <div class="container"><?php require_once($ViewData->ViewPath); ?></div>
+        <div class="container"><?php require_once(str_replace("\\", DS, $ViewData->ViewPath)); ?></div>
         <footer class="nav navbar-fixed-bottom">
             <nav class="nav navbar-inverse">
                 <div class="container">

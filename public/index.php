@@ -16,7 +16,7 @@ spl_autoload_register(
     function($class){
         $class = str_replace("\\", DS, $class).".php";
 		$rutas = explode(PATH_SEPARATOR ,get_include_path());
-        echo $class."<br />";
+        //echo $class."<br />";
 		foreach($rutas as $ruta){
 		   if(file_exists($ruta.$class)){
     			require_once($ruta.$class);
