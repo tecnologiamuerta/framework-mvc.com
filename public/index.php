@@ -10,20 +10,12 @@ define('ROOT', dirname(dirname(__FILE__)).DS);
 define("API", ROOT."API".DS);
 define("APPLICATION", ROOT."Application".DS);
 
-set_include_path(get_include_path().PATH_SEPARATOR.API.PATH_SEPARATOR.APPLICATION);
+set_include_path(API.PATH_SEPARATOR.APPLICATION);
 spl_autoload_extensions(".php");
 spl_autoload_register(
     function($class){
         $class = str_replace("\\", DS, $class).".php";
-		$rutas = explode(PATH_SEPARATOR ,get_include_path());
-        //echo $class."<br />";
-		foreach($rutas as $ruta){
-		   if(file_exists($ruta.$class)){
-    			require_once($ruta.$class);
-    			return;
-    	   }
-		}
-        //spl_autoload($class);
+        require_once($class);
     }
 );
 Application::Run();

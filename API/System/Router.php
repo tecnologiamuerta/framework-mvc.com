@@ -57,7 +57,8 @@ class Router{
         $controller = $this->Routes["controller"];
         $data = "\\Controllers\\".$controller;
         $className = str_replace("\\",DS,$data).".php";
-        $notFound = !$this->FileExists($className, "");
+        $notFound = stream_resolve_include_path($className);
+        //$notFound = !$this->FileExists($className, "");
         if($notFound){
             if($controller === "ErrorsController"){
                 return;

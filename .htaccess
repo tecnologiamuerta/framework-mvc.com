@@ -6,4 +6,4 @@
     RewriteRule    (.*) public/$1    [L]
  </IfModule>
  
- Addhandler application/x-httpd-php .html .php .cphp .iphp
+ #Addhandler application/x-httpd-php .html .php .cphp .iphp
