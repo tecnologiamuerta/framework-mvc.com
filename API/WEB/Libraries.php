@@ -47,4 +47,9 @@ class Libraries{
             }
         }
     }
+    
+    public function RenderScript($js){
+        $fileName = "/js/".$js;
+        echo "<script type='text/javascript' src='".$fileName."'></script>";
+    }
 }

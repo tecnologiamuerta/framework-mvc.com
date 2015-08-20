@@ -10,7 +10,7 @@ class HomeController extends Controller{
     public function IndexAction(){
         $args = func_get_args();
         $view = new View(null, $args);
-        $view->Title = "Programadores de Tecnología Muerta";
+        $view->Title = "Tecnología Muerta";
         $view->Layout = "SharedView";
         $view->Data = new Collectionable();
         //$view->Data["op"] = "Prueba";

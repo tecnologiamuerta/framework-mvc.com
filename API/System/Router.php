@@ -59,7 +59,6 @@ class Router{
         $className = str_replace("\\",DS,$data).".php";
         //$notFound = stream_resolve_include_path($className);
         $notFound = !$this->FileExists($className, "");
-        //echo $className.($notFound ? " No encontrado" : " Jujujuj")."<br />";
         if($notFound){
             if($controller === "ErrorsController"){
                 echo "No mames no hay nada";

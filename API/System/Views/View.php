@@ -28,6 +28,10 @@ class View{
         $this->lib->Render($alias);
     }
     
+    public function RenderScript($js){
+        $this->lib->RenderScript($js);
+    }
+    
     public function __set($name, $value){
         $this->Data[$name] = $value;
     }
