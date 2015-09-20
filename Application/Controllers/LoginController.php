@@ -5,9 +5,8 @@ use \System\Views\View;
 
 class LoginController extends Controller{
     public function IndexAction(){
-        $args = func_get_args();
-        $view = new View(null, $args);
-        $view->Title = "Login of System";
-        return $view;
+        $this->View->Parameters = func_get_args();
+        $this->View->Title = "Login of System";
+        return $this->View;
     }
 }

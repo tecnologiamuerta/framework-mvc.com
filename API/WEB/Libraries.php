@@ -52,4 +52,9 @@ class Libraries{
         $fileName = "/js/".$js;
         echo "<script type='text/javascript' src='".$fileName."'></script>";
     }
+    
+    public function RenderStyle($css){
+        $fileName = "/css/".$css;
+        echo "<link rel='stylesheet' type='text/css' href='$fileName' media='all' />";
+    }
 }

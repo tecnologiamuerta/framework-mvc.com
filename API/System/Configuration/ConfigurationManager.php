@@ -1,6 +1,9 @@
 <?php
 namespace System\Configuration;
 
+use \System\DataTypes\String;
+use \System\Security\Encryption\Cipher;
+
 class ConfigurationManager{
     public $xml;
     public $defaults;
@@ -34,6 +37,19 @@ class ConfigurationManager{
             $this->Save();
         }
         return $key;
+    }
+    
+    public function IsAdminPassword($password){
+        $admin = $this->xml->system->admin;
+        $adminPassword = new String($admin["password"]);
+        
+        $cipher = new Cipher($this->GetKey());
+        $capturePassword = $cipher->encrypt($password);
+        if($adminPassword->Equals($capturePassword)){
+            return true;
+        }else{
+            return false;
+        }
     }
     
     public function SetKey($key){

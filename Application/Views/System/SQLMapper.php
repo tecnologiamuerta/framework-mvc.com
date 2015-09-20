@@ -1,0 +1,1 @@
+<h1>Vista parcial</h1>

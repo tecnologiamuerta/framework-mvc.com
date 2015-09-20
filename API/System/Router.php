@@ -53,11 +53,18 @@ class Router{
         }
     }
     
+    public static function RouteTo($controller, $action){
+        echo "\\$controller\\$action";
+    }
+    
+    public static function GetRoute($controller, $action){
+        return "\\$controller\\$action";
+    }
+    
     private function Dispatch(){
         $controller = $this->Routes["controller"];
         $data = "\\Controllers\\".$controller;
         $className = str_replace("\\",DS,$data).".php";
-        //$notFound = stream_resolve_include_path($className);
         $notFound = !$this->FileExists($className, "");
         if($notFound){
             if($controller === "ErrorsController"){
@@ -76,22 +83,41 @@ class Router{
         
         $dispatch = new $data($this->Routes["model"], $this->Routes["controller"], $this->Routes["action"]);
         if(!method_exists($data, $this->Routes["action"])){
-            $this->Routes["action"] = $dispatch->DefaultAction;
+            if($controller === "ErrorsController"){
+                echo "No mames no hay nada";
+                return;
+            }
+            $this->Routes = array(
+                "controller" => "ErrorsController",
+                "action" => "Error404Action",
+                "parameters" => array("Error" => $controller, "Action" => $this->Routes["action"])
+            );
+            $this->Routes["model"] = rtrim($this->Routes["controller"], "s");
+            $this->Dispatch();
+            return;
         }
         if(method_exists($data, $this->Routes["action"])){
             $ViewData = call_user_func_array(array($dispatch, $this->Routes["action"]), $this->Routes["parameters"]);
-            $ViewData->ViewPath = "Views\\".str_replace("Controller", "", $controller)."\\".str_replace("Action", "", $this->Routes["action"]).".php";
-            $ViewData->Controller = str_replace("Controller", "", $controller);
-            if($ViewData->Layout == null){
-                $MainLayout = APPLICATION."Views".DS.str_replace("Controller", "", $controller).DS.str_replace("Action", "", $this->Routes["action"]).".php";
+            //echo $ViewData->HasRedirect() ? "Si" : "No";
+            if($ViewData->HasRedirect()){
+                $ViewData->TryToRedirect();
             }else{
-                $MainLayout = APPLICATION."Views".DS."Shared".DS.$ViewData->Layout.".php";
+                if($ViewData->Layout == null){
+                    $MainLayout = APPLICATION.$ViewData->ViewPath;
+                }else{
+                    $MainLayout = APPLICATION."Views"."/"."Shared"."/".$ViewData->Layout.".php";
+                }
+                ob_start(array($this, "Response"));
+                require_once($MainLayout);
+                ob_end_flush();
             }
-            require_once($MainLayout);
         }else{
             echo "Not found";
-            //throw new \Exception("El controlador ".$controller." con el action ".$this->Routes["action"]." no se encuentra definido");
         }
+    }
+    
+    public function Response($str){
+        return str_replace("@var", "Prueba exitosa", $str);
     }
     
     private function NormalizeRoute(){
@@ -107,7 +133,7 @@ class Router{
         $this->DefaultRoute = $defaultRoute;
     }
     
-    public function GetRoute(){
+    public function GetRoutes(){
         return $this->Routes;
     }
     

@@ -1,5 +1,8 @@
+<?php
+    use \System\Router;
+?>
 <!doctype html>
-<html>
+<html lang="es-mx">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,33 +12,35 @@
             $ViewData->RenderLibrary("jquery-ui");
             $ViewData->RenderLibrary("bootstrap");
             $ViewData->RenderScript("Default.js");
+            $ViewData->RenderCustomScript();
+            $ViewData->RenderCustomStyle();
         ?>
     </head>
     <body style="padding-top: 55px;">
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand hidden-xs" href="<?php echo $ViewData->Controller; ?>" ><?php echo $ViewData->Title; ?></a>
+                    <a class="navbar-brand hidden-xs" href="<?php echo "/".$ViewData->Controller; ?>" ><?php echo $ViewData->Title; ?></a>
                     <a class="navbar-brand visible-xs collapsed collapse" data-toggle="collapse" data-target="#navbar" href="#" ><?php echo $ViewData->Title; ?></a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="/">Inicio</a></li>
-                        <li><a href="about">Explicación</a></li>
-                        <li><a href="contact">Contacto</a></li>
+                        <li><a href="<?php Router::RouteTo("System", ""); ?>">Sistema</a></li>
+                        <li><a href="<?php Router::RouteTo("Contacto", ""); ?>">Contacto</a></li>
                     </ul>
-                </div><!--/.nav-collapse -->
+                </div>
             </div>
         </nav>
-        <div class="container"><?php require_once(str_replace("\\", DS, $ViewData->ViewPath)); ?></div>
+        <div class="container-fluid"><?php require_once(str_replace("\\", DS, $ViewData->ViewPath)); ?></div>
         <footer class="nav navbar-fixed-bottom">
             <nav class="nav navbar-inverse">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand collapse visible-xs-inline collapsed" data-toggle="collapse" data-target="#navbar_footer" href="#">Información de la página</a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_footer">
@@ -46,10 +51,10 @@
                     </div>
                     <div id="navbar_footer" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="licencia">Licencia</a></li>
-                            <li><a href="politicas">Politica de privacidad</a></li>
-                            <li><a href="terminos">Terminos del servicio</a></li>
-                            <li><a href="contrato">Contrato del usuario</a></li>
+                            <li><a href="<?php Router::RouteTo("licencia", ""); ?>">Licencia</a></li>
+                            <li><a href="<?php Router::RouteTo("politicas", ""); ?>">Politica de privacidad</a></li>
+                            <li><a href="<?php Router::RouteTo("terminos", ""); ?>">Terminos del servicio</a></li>
+                            <li><a href="<?php Router::RouteTo("contrato", ""); ?>">Contrato del usuario</a></li>
                         </ul>
                     </div>
                 </div>

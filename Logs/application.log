@@ -160,3 +160,39 @@
 [09-Aug-2015 23:21:52 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:14
 [09-Aug-2015 23:21:52 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:22
 [09-Aug-2015 23:21:52 Europe/Paris] PHP   4. SimpleXMLElement->addAttribute() E:\proyectos\php\framework-mvc.com\API\System\Application.php:49
+[02-Sep-2015 05:59:42 Europe/Paris] PHP Catchable fatal error:  Object of class System\Views\View could not be converted to string in E:\proyectos\php\framework-mvc.com\API\System\Controllers\Controller.php on line 32
+[02-Sep-2015 05:59:42 Europe/Paris] PHP Stack trace:
+[02-Sep-2015 05:59:42 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[02-Sep-2015 05:59:42 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:21
+[02-Sep-2015 05:59:42 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:23
+[02-Sep-2015 05:59:42 Europe/Paris] PHP   4. System\Router->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:44
+[02-Sep-2015 05:59:42 Europe/Paris] PHP   5. System\Router->Dispatch() E:\proyectos\php\framework-mvc.com\API\System\Router.php:17
+[02-Sep-2015 05:59:42 Europe/Paris] PHP   6. System\Controllers\Controller->__construct() E:\proyectos\php\framework-mvc.com\API\System\Router.php:80
+[02-Sep-2015 05:59:43 Europe/Paris] PHP Catchable fatal error:  Object of class System\Views\View could not be converted to string in E:\proyectos\php\framework-mvc.com\API\System\Controllers\Controller.php on line 32
+[02-Sep-2015 05:59:43 Europe/Paris] PHP Stack trace:
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:21
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:23
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   4. System\Router->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:44
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   5. System\Router->Dispatch() E:\proyectos\php\framework-mvc.com\API\System\Router.php:17
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   6. System\Controllers\Controller->__construct() E:\proyectos\php\framework-mvc.com\API\System\Router.php:80
+[02-Sep-2015 05:59:43 Europe/Paris] PHP Catchable fatal error:  Object of class System\Views\View could not be converted to string in E:\proyectos\php\framework-mvc.com\API\System\Controllers\Controller.php on line 32
+[02-Sep-2015 05:59:43 Europe/Paris] PHP Stack trace:
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:21
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:23
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   4. System\Router->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:44
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   5. System\Router->Dispatch() E:\proyectos\php\framework-mvc.com\API\System\Router.php:17
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   6. System\Router->Dispatch() E:\proyectos\php\framework-mvc.com\API\System\Router.php:76
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   7. Controllers\ErrorsController->__construct() E:\proyectos\php\framework-mvc.com\API\System\Router.php:80
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   8. System\Controllers\Controller->__construct() E:\proyectos\php\framework-mvc.com\Application\Controllers\ErrorsController.php:10
+[02-Sep-2015 05:59:43 Europe/Paris] PHP Catchable fatal error:  Object of class System\Views\View could not be converted to string in E:\proyectos\php\framework-mvc.com\API\System\Controllers\Controller.php on line 32
+[02-Sep-2015 05:59:43 Europe/Paris] PHP Stack trace:
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   1. {main}() E:\proyectos\php\framework-mvc.com\public\index.php:0
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   2. System\Application::Run() E:\proyectos\php\framework-mvc.com\public\index.php:21
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   3. System\Application->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:23
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   4. System\Router->__construct() E:\proyectos\php\framework-mvc.com\API\System\Application.php:44
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   5. System\Router->Dispatch() E:\proyectos\php\framework-mvc.com\API\System\Router.php:17
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   6. System\Router->Dispatch() E:\proyectos\php\framework-mvc.com\API\System\Router.php:76
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   7. Controllers\ErrorsController->__construct() E:\proyectos\php\framework-mvc.com\API\System\Router.php:80
+[02-Sep-2015 05:59:43 Europe/Paris] PHP   8. System\Controllers\Controller->__construct() E:\proyectos\php\framework-mvc.com\Application\Controllers\ErrorsController.php:10

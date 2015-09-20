@@ -3,6 +3,8 @@ namespace System\Views;
 
 use \System\Application;
 use \WEB\Libraries;
+use \WEB\Session;
+use \System\Router;
 
 class View{
     public $Parameters;
@@ -12,16 +14,33 @@ class View{
     public $Layout;
     public $Post;
     public $Controller;
+    public $Session;
+    public $ControllerName;
+    public $ActionName;
     
+    private $CustomJS;
+    private $CustomCSS;
     private $lib;
     private $Data;
+    private $EsRedirect;
+    private $RedirectTo;
     
     public function __construct($model, $params){
-        $this->Parameters = $params;
-        $this->Model = $model;
+        $argumentos = func_get_args();
+        switch(count($argumentos)){
+            case 1:
+                break;
+            case 2:
+                $this->Parameters = $params;
+                $this->Model = $model;
+                break;
+        }
         $this->Layout = Application::$Configuration->defaults->layout["name"];
         $this->lib = Libraries::Load();
         $this->AfianzarParametrosPost();
+        $this->CustomJS = array();
+        $this->CustomCSS = array();
+        $this->Session = Session::Init();
     }
     
     public function RenderLibrary($alias){
@@ -32,12 +51,36 @@ class View{
         $this->lib->RenderScript($js);
     }
     
+    public function RenderStyle($css){
+        $this->lib->RenderStyle($css);
+    }
+    
+    public function AddScript($js){
+        $this->CustomJS[] = $js;
+    }
+    
+    public function AddStyle($css){
+        $this->CustomCSS[] = $css;
+    }
+    
+    public function RenderCustomScript(){
+        foreach($this->CustomJS as $js){
+            $this->RenderScript($js);
+        }
+    }
+    
+    public function RenderCustomStyle(){
+        foreach($this->CustomCSS as $css){
+            $this->RenderStyle($css);
+        }
+    }
+    
     public function __set($name, $value){
         $this->Data[$name] = $value;
     }
     
     public function __get($name){
-        return $this->Data[$name];
+        return isset($this->Data[$name]) ? $this->Data[$name] : "";
     }
     
     public function __isset($name){
@@ -50,6 +93,24 @@ class View{
     
     public function IsPost(){
         return $_SERVER["REQUEST_METHOD"] === "POST";
+    }
+    
+    public function SetRedirect($controller, $action){
+        $this->EsRedirect = true;
+        $this->RedirectTo = Router::GetRoute($controller, $action);
+    }
+    
+    public function TryToRedirect(){
+        header("Location: $this->RedirectTo");
+    }
+    
+    public function HasRedirect(){
+        return $this->EsRedirect;
+    }
+    
+    public function ViewTo($action){
+        $this->ActionName = $action;
+        $this->ViewPath = "Views/".$this->ControllerName."/".$action.".php";
     }
     
     private function AfianzarParametrosPost(){

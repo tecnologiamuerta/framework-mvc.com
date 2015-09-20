@@ -1,4 +1,5 @@
-<form method="post" role="form">
+<?php use \System\Router; ?>
+<form id="formEncrypted" method="post" role="form" data-type="ajax" action="<?php Router::RouteTo("System", "Encrypted"); ?>">
     <div class="form-group">
         <label for="txtEncriptar">Texto a encriptar</label>
         <textarea class="form-control" name="txtEncriptar" id="txtEncriptar" cols="50" rows="5"><?php

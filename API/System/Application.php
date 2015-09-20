@@ -4,6 +4,7 @@ namespace System;
 use \System\Router;
 use \System\Configuration\ConfigurationManager;
 use \WEB\Libraries;
+use \WEB\Session;
 
 class Application{
     private $Root;
@@ -25,22 +26,22 @@ class Application{
     }
     
     private function __construct(){
+        Session::Init();
         $this->Root = dirname(dirname(__FILE__));
         self::$Url = isset($_GET["url"]) ? $_GET["url"] : "";
         if(self::$Url === "map"){
             NamespaceMapGenerator::Generate(ROOT);
         }else{
             self::$Configuration = new ConfigurationManager();
+            self::$IsDeveloper = self::$Configuration->environment["type"] == "developer";
+            $this->SetReportingEnvironment();
+            $this->RemoveMagicQuotes();
+            $this->UnregisterGlobals();
             self::$Route = new Router(self::$Url, array(
                 "controller" => self::$Configuration->defaults->route["controller"],
                 "action" => self::$Configuration->defaults->route["action"],
                 "parameters" => array()
             ));
-            self::$IsDeveloper = self::$Configuration->environment["type"] === "developer";
-            
-            $this->SetReportingEnvironment();
-            $this->RemoveMagicQuotes();
-            $this->UnregisterGlobals();
         }
     }
     

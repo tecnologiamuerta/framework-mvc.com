@@ -41,6 +41,14 @@ class String{
         }else return $this->data;
     }
     
+    public function Equals($data){
+        return strcmp($this->data, $data) === 0;
+    }
+    
+    public function Replace($strSearch, $strReplace){
+        return str_replace($strSearch, $strReplace, $this->data);
+    }
+    
     public function __toString(){
         return $this->data;
     }

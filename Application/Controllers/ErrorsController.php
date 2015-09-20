@@ -11,15 +11,19 @@ class ErrorsController extends Controller{
         $this->DefaultAction = "Error404Action";
     }
     
-    /*public function IndexAction(){
-        $view = new View(null, func_get_args());
-        $view->Title = "Error en la aplicación";
-        return $view;
-    }*/
-    
     public function Error404Action(){
-        $view = new View(null, func_get_args());
-        $view->Title = "Error en la aplicación";
-        return $view;
+        $this->View->Parameters = func_get_args();
+        $this->View->Title = "Error en la aplicación";
+        
+        $controller = $this->View->Parameters[0];
+        $action = "";
+        if(isset($this->View->Parameters[1])){
+            $action = $this->View->Parameters[1];
+        }
+        
+        $this->View->controller = $controller;
+        $this->View->action = $action;
+        
+        return $this->View;
     }
 }
