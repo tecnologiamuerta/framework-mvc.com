@@ -1,5 +1,6 @@
 <?php
     use \System\Router;
+    $ViewData->Title = "Tecnología Muerta";
 ?>
 <!doctype html>
 <html lang="es-mx">
@@ -30,7 +31,7 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="/">Inicio</a></li>
+                        <li id="lnkHome" class="active"><a href="/">Inicio</a></li>
                         <li><a href="<?php Router::RouteTo("System", ""); ?>">Sistema</a></li>
                         <li><a href="<?php Router::RouteTo("Contacto", ""); ?>">Contacto</a></li>
                     </ul>

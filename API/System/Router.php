@@ -98,7 +98,6 @@ class Router{
         }
         if(method_exists($data, $this->Routes["action"])){
             $ViewData = call_user_func_array(array($dispatch, $this->Routes["action"]), $this->Routes["parameters"]);
-            //echo $ViewData->HasRedirect() ? "Si" : "No";
             if($ViewData->HasRedirect()){
                 $ViewData->TryToRedirect();
             }else{

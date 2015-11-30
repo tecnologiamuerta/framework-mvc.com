@@ -1,12 +1,9 @@
 <?php use \System\Router; ?>
 <div class="row">
-    <div id="leftbar" class="col-xs-4 col-sm-4 col-md-2 col-lg-2 navbar bg-info">
+    <div id="leftbar" class="col-xs-4 col-sm-4 col-md-2 col-lg-2 navbar">
         <ul class="nav nav-stacked nav-pills">
             <li>
                 <a data-type="ajax" data-target="#target" href="<?php Router::RouteTo("System", "Encrypted"); ?>">Encrypted</a>
-            </li>
-            <li>
-                <a data-type="ajax" data-target="#target" href="<?php Router::RouteTo("System", "SQLMapper"); ?>">SQLMapper</a>
             </li>
             <li>
                 <a href="<?php Router::RouteTo("System", "Logout");?>">Cerrar sesión</a>

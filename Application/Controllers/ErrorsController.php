@@ -13,7 +13,6 @@ class ErrorsController extends Controller{
     
     public function Error404Action(){
         $this->View->Parameters = func_get_args();
-        $this->View->Title = "Error en la aplicación";
         
         $controller = $this->View->Parameters[0];
         $action = "";

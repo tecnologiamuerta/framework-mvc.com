@@ -11,7 +11,6 @@ class SystemController extends Controller{
     
     public function IndexAction(){
         $this->View->Parameters = func_get_args();
-        $this->View->Title = "Sistema";
         $this->View->AddScript("AjaxUtils.js");
         $this->View->AddStyle("System.css");
         if(!$this->SessionAdmin->IsAdminActive()){
@@ -20,16 +19,8 @@ class SystemController extends Controller{
         return $this->View;
     }
     
-    public function SQLMapperAction(){
-        $this->View->Parameters = func_get_args();
-        $this->View->Layout = null;
-        $this->View->Title = "Mapeo SQL";
-        return $this->View;
-    }
-    
     public function EncryptedAction(){
         $this->View->Parameters = func_get_args();
-        $this->View->Title = "Servicio de criptografia";
         if($this->View->IsPost()){
             $cipher = new Cipher(Application::$Configuration->GetKey());
             $out = $cipher->encrypt($this->View->txtEncriptar);
@@ -42,7 +33,6 @@ class SystemController extends Controller{
     
     public function LoginAction(){
         $this->View->Parameters = func_get_args();
-        $this->View->Title = "System login";
         if($this->View->IsPost()){
             $this->SessionAdmin->Login($this->View->txtPassword);
             if($this->SessionAdmin->IsAdminActive()){
