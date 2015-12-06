@@ -13,6 +13,7 @@
         ?></textarea>
     </div>
     <div class="form-group">
-        <input type="submit" value="Enviar" class="btn btn-default" />
+        <input type="submit" id="btnEncriptar" value="Enviar" class="btn btn-default" />
     </div>
+    <input type="button" value="jajaja ok: <?php echo $ViewData->hSender; ?>" />
 </form>

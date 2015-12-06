@@ -8,3 +8,7 @@
 #target{
     text-align: center;
 }
+
+.defaultCursor{
+    cursor: default;
+}

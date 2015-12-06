@@ -1,6 +1,6 @@
 <?php
     use \System\Router;
-    $ViewData->Title = "Tecnología Muerta";
+    $ViewData->Title = $ViewData->PageInformation->Name;
 ?>
 <!doctype html>
 <html lang="es-mx">
@@ -12,7 +12,8 @@
             $ViewData->RenderLibrary("jquery");
             $ViewData->RenderLibrary("jquery-ui");
             $ViewData->RenderLibrary("bootstrap");
-            $ViewData->RenderScript("Default.js");
+            $ViewData->RenderScript("System.js");
+            $ViewData->RenderStyle("System.css");
             $ViewData->RenderCustomScript();
             $ViewData->RenderCustomStyle();
         ?>
@@ -31,9 +32,9 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li id="lnkHome" class="active"><a href="/">Inicio</a></li>
-                        <li><a href="<?php Router::RouteTo("System", ""); ?>">Sistema</a></li>
-                        <li><a href="<?php Router::RouteTo("Contacto", ""); ?>">Contacto</a></li>
+                        <li<?php echo $ViewData->ControllerName == "Home" ? " class='active' " : ""; ?>><a id="lnkHome" href="/">Inicio</a></li>
+                        <li<?php echo $ViewData->ControllerName == "System" ? " class='active' " : ""; ?>><a id="lnkSistema" href="<?php Router::RouteTo("System", ""); ?>">Sistema</a></li>
+                        <li<?php echo $ViewData->ControllerName == "Contact" ? " class='active' " : ""; ?>><a href="<?php Router::RouteTo("Contact", ""); ?>">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,6 +50,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+                        <span class="navbar-brand hidden-xs defaultCursor"><?php echo "&copy;".date("Y")." - ".$ViewData->PageInformation->Name." (".$ViewData->PageInformation->Version.")"; ?></span>
                     </div>
                     <div id="navbar_footer" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">

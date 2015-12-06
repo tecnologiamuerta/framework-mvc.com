@@ -5,6 +5,7 @@ use \System\Application;
 use \WEB\Libraries;
 use \WEB\Session;
 use \System\Router;
+use \System\Information\Page;
 
 class View{
     public $Parameters;
@@ -17,6 +18,7 @@ class View{
     public $Session;
     public $ControllerName;
     public $ActionName;
+    public $PageInformation;
     
     private $CustomJS;
     private $CustomCSS;
@@ -41,6 +43,7 @@ class View{
         $this->CustomJS = array();
         $this->CustomCSS = array();
         $this->Session = Session::Init();
+        $this->PageInformation = Page::Fill();
     }
     
     public function RenderLibrary($alias){

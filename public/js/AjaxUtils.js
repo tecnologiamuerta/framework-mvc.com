@@ -11,6 +11,10 @@ $(function(){
 });
 
 function SetFormAjax(target){
+    if($("#hSender").length == 0){
+        var sender = $("<input type='hidden' id='hSender' name='hSender' />");
+        $("form").append(sender);
+    }
     $("form[data-type=ajax]").submit(function(e){
         var url = $(this).attr("action");
         var data = $(this).serialize();
@@ -20,4 +24,5 @@ function SetFormAjax(target){
         });
         e.preventDefault();
     });
+    DefaultClickBehavior();
 }

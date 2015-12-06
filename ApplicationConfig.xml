@@ -1,6 +1,14 @@
 <?xml version="1.0" standalone="no"?>
 <application version="0" key="b40d1267e01ebf40cb5f89837e18e170688a6f3d">
     <system>
+        <information>
+            <page version="1.0">
+                <!--Tecnología Muerta-->
+                <!--La tecnología nunca muere, solo evoluciona-->
+                <name>Tu empresa</name>
+                <slogan>Tu eslogan</slogan>
+            </page>
+        </information>
         <admin password="zfoKWOHxXQ1Jr8p/nkYtMMLIgck2Qkn50m3lCc0BtdI=" />
         <environment type="developer">
         </environment>

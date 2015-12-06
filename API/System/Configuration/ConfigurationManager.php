@@ -13,6 +13,7 @@ class ConfigurationManager{
     public $environment;
     public $routes;
     public $fileName;
+    public $pageInfo;
     public function __construct(){
         $this->fileName = ROOT."ApplicationConfig.xml";
         $this->xml = new \SimpleXMLElement(file_get_contents($this->fileName));
@@ -22,6 +23,7 @@ class ConfigurationManager{
         $this->connections = $this->xml->system->connections;
         $this->environment = $this->xml->system->environment;
         $this->routes = $this->xml->system->routes;
+        $this->pageInfo = $this->xml->system->information->page;
     }
     
     public function GetDefaultAction($controller){
